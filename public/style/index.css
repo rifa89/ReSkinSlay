@@ -1,0 +1,45 @@
+.search{
+    width: 1500px;
+}
+
+.all{
+    /* background-color: darkgreen; */
+}
+
+.desc{
+    background-color: white;
+    border-radius: 10px;
+    padding: 13px;
+    margin-top: 10px;
+    background-color: rgb(24, 213, 24);
+
+}
+
+.desc:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+    transition: 0.2s;
+    color: white;
+}
+
+.card-prod:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    transition: 0.2s;
+}
+
+/* Carousel */
+.carousel .carousel-item{
+    height: 400px;
+    padding-bottom: 10px;
+}
+
+.carousel-item{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
