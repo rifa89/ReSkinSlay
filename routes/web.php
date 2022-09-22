@@ -23,6 +23,7 @@ Route::get('/about', [\App\Http\Controllers\HomepageController::class,'about']);
 Route::get('/kategori', [\App\Http\Controllers\HomepageController::class,'kategori']);
 Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class,'index']);
 Route::get('/login', [\App\Http\Controllers\DashboardController::class,'login']);
+Route::get('/register', [\App\Http\Controllers\DashboardController::class,'register']);
 
 Route::group(['prefix' => 'admin'] , function(){
     Route::get('/' ,[\App\Http\Controllers\DashboardController::class,'index']);
