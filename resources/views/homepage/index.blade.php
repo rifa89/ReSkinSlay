@@ -24,10 +24,11 @@
                 <div class="row">
                     <div class="col-3">
                         <!-- Button trigger modal -->
+                        <a href="#">
                         <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="{{ asset ('images/prod.jpg') }}" class="promo" alt="">
+                            <img src="{{ asset ('images/modal1.jpg') }}" class="promo" alt="">
                         </div>
-
+                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -39,7 +40,7 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                    <img src="{{ asset ('images/prod.jpg') }}" class="promodetails mx-auto" alt="">
+                                    <img src="{{ asset ('images/modal1.jpg') }}" class="promodetails mx-auto" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -58,15 +59,15 @@
                             <div class="carousel-inner">
 
                                 <div class="carousel-item active">
-                                    <img src="{{ asset ('images/meong.jpeg') }}" class="d-block w-100" alt="...">
+                                    <img src="{{ asset ('images/banner1.jpg') }}" class="d-block w-100" alt="...">
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img src="{{ asset ('images/prod1.jpeg') }}" class="d-block w-100" alt="...">
+                                    <img src="{{ asset ('images/banner1.jpg') }}" class="d-block w-100" alt="...">
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img src="{{ asset ('images/meong.jpeg') }}" class="d-block w-100" alt="...">
+                                    <img src="{{ asset ('images/banner1.jpg') }}" class="d-block w-100" alt="...">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button"
@@ -81,11 +82,15 @@
                             </button>
                         </div>
                     </div>
+
+
                     <div class="col-3">
                         <!-- Button trigger modal -->
+                        <a href="#">
                         <div data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                        <img src="{{ asset ('images/product2.jpg') }}" class="promo" alt="">
+                        <img src="{{ asset ('images/modal2.jpg') }}" class="promo" alt="">
                         </div>
+                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -97,7 +102,7 @@
                                             aria-label="Close"></button>
                                         </div>
                                     <div class="modal-body">
-                                    <img src="{{ asset ('images/product2.jpg') }}" class="promodetails mx-auto" alt="">
+                                    <img src="{{ asset ('images/modal2.jpg') }}" class="promodetails mx-auto" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -111,107 +116,11 @@
                     <!-- produk pertama -->
                     <div class="col-md-3 card-prod">
                         <div class="card mb-4 shadow-sm">
-                            <a href="{{ URL::to('produk/satu') }}">
-                                <img src="{{asset('images/prod1.jpeg') }}" alt="foto produk" class="card-img-top">
+                            <a href="{{ URL::to('detail') }}">
+                                <img src="{{asset('images/skinslay02.jpg') }}" alt="foto produk" class="card-img-top">
                             </a>
                             <div class="card-body">
-                                <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
-                                    <p class="card-text text-center">
-                                        SkinSlayProduct
-                                    </p>
-                                </a>
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <button class="btn btn-success text-center" style="margin-left: 25px;">
-                                            <i class="text-center">Details</i>
-                                        </button>
-
-                                        <button class="btn btn-warning">
-                                            <i class="text-center">Cart</i>
-                                        </button>
-                                    </div>
-                                    <div class="col-auto p-3">
-                                        <p>
-                                            <del>Rp. 15.000,00</del>
-                                            <br />
-                                            Rp. 10.000,00
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card-prod">
-                        <div class="card mb-4 shadow-sm">
-                            <a href="{{ URL::to('produk/satu') }}">
-                                <img src="{{asset('images/meong.jpeg') }}" alt="foto produk" class="card-img-top">
-                            </a>
-                            <div class="card-body">
-                                <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
-                                    <p class="card-text text-center">
-                                        SkinSlayProduct
-                                    </p>
-                                </a>
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <button class="btn btn-success text-center" style="margin-left: 25px;">
-                                            <i class="text-center">Details</i>
-                                        </button>
-
-                                        <button class="btn btn-warning">
-                                            <i class="text-center">Cart</i>
-                                        </button>
-                                    </div>
-                                    <div class="col-auto p-3">
-                                        <p>
-                                            <del>Rp. 15.000,00</del>
-                                            <br />
-                                            Rp. 10.000,00
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card-prod">
-                        <div class="card mb-4 shadow-sm">
-                            <a href="{{ URL::to('produk/satu') }}">
-                                <img src="{{asset('images/prod1.jpeg') }}" alt="foto produk" class="card-img-top">
-                            </a>
-                            <div class="card-body">
-                                <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
-                                    <p class="card-text text-center">
-                                        SkinSlayProduct
-                                    </p>
-                                </a>
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <button class="btn btn-success text-center" style="margin-left: 25px;">
-                                            <i class="text-center">Details</i>
-                                        </button>
-
-                                        <button class="btn btn-warning">
-                                            <i class="text-center">Cart</i>
-                                        </button>
-                                    </div>
-                                    <div class="col-auto p-3">
-                                        <p>
-                                            <del>Rp. 15.000,00</del>
-                                            <br />
-                                            Rp. 10.000,00
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 card-prod">
-                        <div class="card mb-4 shadow-sm">
-                            <a href="{{ URL::to('produk/satu') }}">
-                                <img src="{{asset('images/prod1.jpeg') }}" alt="foto produk" class="card-img-top">
-                            </a>
-                            <div class="card-body">
-                                <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
+                                <a href="{{ URL::to('detail') }}" class="text-decoration-none">
                                     <p class="card-text text-center">
                                         SkinSlayProduct
                                     </p>

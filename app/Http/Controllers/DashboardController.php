@@ -10,4 +10,5 @@ class DashboardController extends Controller
         $data = array('title' => 'Homepage');
         return view('dashboard.index', $data);
     }
+
 }

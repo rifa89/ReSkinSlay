@@ -23,4 +23,8 @@ class HomepageController extends Controller
         $data = array('title' => 'login');
         return view('homepage.login', $data);
 }
+public function desc(){
+    $data = array('title' => 'desc');
+    return view('detail.desc' , $data);
+}
 }

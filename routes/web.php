@@ -18,12 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('/', [\App\Http\Controllers\HomepageController::class,'index']);
-Route::get('/produk', [\App\Http\Controllers\HomepageController::class,'produk']);
+Route::get('/produk', [\App\Http\Controllers\ProdukController::class,'produk']);
 Route::get('/about', [\App\Http\Controllers\HomepageController::class,'about']);
 Route::get('/kategori', [\App\Http\Controllers\HomepageController::class,'kategori']);
 Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class,'index']);
 Route::get('/login', [\App\Http\Controllers\DashboardController::class,'login']);
 Route::get('/register', [\App\Http\Controllers\DashboardController::class,'register']);
+Route::get('/detail', [\App\Http\Controllers\HomepageController::class,'desc']);
 
 Route::group(['prefix' => 'admin'] , function(){
     Route::get('/' ,[\App\Http\Controllers\DashboardController::class,'index']);
