@@ -20,7 +20,9 @@
     <div class="all">
         <div class="carousel">
             <div class="container">
+
                 <i class="fa-solid fa-cart-shopping fixed-bottom cart"></i>
+                
                 <div class="row">
                     <div class="col-3">
                         <!-- Button trigger modal -->

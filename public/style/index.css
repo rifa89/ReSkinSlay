@@ -30,7 +30,7 @@
     color: black;
 }
 
-.all {
+body {
     background: rgb(128, 182, 24);
     background: linear-gradient(90deg, rgba(128, 182, 24, 1) 0%, rgba(9, 121, 16, 0.7203256302521008) 43%, rgba(223, 247, 144, 1) 100%);
 
