@@ -30,6 +30,8 @@ Route::group(['prefix' => 'admin'] , function(){
     Route::get('/' ,[\App\Http\Controllers\DashboardController::class,'index']);
     Route::resource('customer',\App\Http\Controllers\CustomerController::class);
     Route::resource('transaksi',\App\Http\Controllers\TransaksiController::class);
+    Route::get('profil',[\App\Http\Controllers\UserController::class,'index']);
+    Route::get('setting',[\App\Http\Controllers\UserController::class,'setting']);
 });
 
 
