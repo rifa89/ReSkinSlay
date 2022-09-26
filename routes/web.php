@@ -28,6 +28,7 @@ Route::get('/detail', [\App\Http\Controllers\HomepageController::class,'desc']);
 
 Route::group(['prefix' => 'admin'] , function(){
     Route::get('/' ,[\App\Http\Controllers\DashboardController::class,'index']);
+    Route::resource('customer',\App\Http\Controllers\CustomerController::class);
 });
 
 
